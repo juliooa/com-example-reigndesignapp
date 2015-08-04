@@ -126,7 +126,7 @@ public class StoryDBAdapter {
                 stories.add(s);
             }while (c.moveToNext());
         }
-        Collections.sort(stories);
+        Collections.reverse(stories);
         c.close();
         return stories;
     }

@@ -53,7 +53,6 @@ public class StoriesListViewAdapter extends BaseAdapter {
         holder.tv_title.setText(item.story_title == null ? item.title : item.story_title);
         holder.tv_author.setText(item.author + " - ");
         holder.tv_date.setText(Utils.getTimePassed(item.created_at));
-        //holder.tv_date.setText(item.created_at);
         return convertView;
     }
 
